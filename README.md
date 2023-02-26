@@ -37,7 +37,8 @@ php artisan vendor:publish --provider="Onex\Sysinfo\OnexSysinfoServiceProvider" 
 <dl>
   <dt>>> <code>Just install and run the below route </span></code></dt>
 </dl>
-```
+
+```php
 Ex: http://your-website/onex/check-sysinfo
 
 Ex: http://localhost:8000/onex/check-sysinfo
@@ -48,15 +49,42 @@ Ex: http://localhost:8000/onex/check-sysinfo
 <dl>
   <dt>>>> <code>Just install and call below methods </span></code></dt>
 </dl>
->> Ex1: OnexSysinfo::getSystemInfo()
->> Ex2: OnexSysinfo::getAllPaths()
->> Ex3: OnexSysinfo::isStorageWritable()
->> Ex4: OnexSysinfo::isCacheWritable()
->> Ex5: OnexSysinfo::getAllEnvs()
->> Ex6: OnexSysinfo::getServerInfo()
->> Ex7: OnexSysinfo::howManyTablesInDB()
->> Ex8: OnexSysinfo::getAllTablesName()
->> Ex9: OnexSysinfo::getEnabledPhpExtensions()
+
+```php
+>> Ex1: OnexSysinfo::getSystemInfo();
+```
+
+```php
+>> Ex2: OnexSysinfo::getAllPaths();
+```
+
+```php
+>> Ex3: OnexSysinfo::isStorageWritable();
+```
+
+```php
+>> Ex4: OnexSysinfo::isCacheWritable();
+```
+
+```php
+>> Ex5: OnexSysinfo::getAllEnvs();
+```
+
+```php
+>> Ex6: OnexSysinfo::getServerInfo();
+```
+
+```php
+>> Ex7: OnexSysinfo::howManyTablesInDB();
+```
+
+```php
+>> Ex8: OnexSysinfo::getAllTablesName();
+```
+
+```php
+>> Ex9: OnexSysinfo::getEnabledPhpExtensions();
+```
 
 #### You can modify the configuration settings in - "config/onex-sysinfo.php":
 
