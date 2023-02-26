@@ -4,6 +4,8 @@
 
 ## Installation
 
+> **No dependency on PHP version and LARAVEL version**
+
 ### STEP 1: Run the composer command:
 
 ```shell
