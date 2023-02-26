@@ -1,19 +1,21 @@
 <div class="onex-table-box">
-    <div class="text-right" style="margin-bottom: 10px;"><a class="onexlogout" href="{{ route('onexsysinfoAdminLogout') }}">Close/Logout</a></div>
-        <table class="onex-table">
-            <thead>
-                <tr>
-                    <th class="text-center">PHP VERSION</th>
-                    <th class="text-center">LARAVEL VERSION</th>
-                    <th class="text-center">MYSQL VERSION</th>
-                </tr>
-                <tr>
-                    <td class="text-center text-xl">@if(!empty($versions['php'])){{ $versions['php'] }}@endif</td>
-                    <td class="text-center text-xl">@if(!empty($versions['laravel'])){{ $versions['laravel'] }}@endif</td>
-                    <td class="text-center text-xl">@if(!empty($versions['mysql'])){{ $versions['mysql'] }}@else <span style="color: red;">DB not connected!</span> @endif</td>
-                </tr>
-            </thead>
-        </table>
+    @if(Session::has('onexSysinfoAdminAccessEnabled') && Session::get('onexSysinfoAdminAccessEnabled') == 'YES')
+        <div class="text-right" style="margin-bottom: 10px;"><a class="onexlogout" href="{{ route('onexsysinfoAdminLogout') }}">Close/Logout</a></div>
+    @endif
+    <table class="onex-table">
+        <thead>
+            <tr>
+                <th class="text-center">PHP VERSION</th>
+                <th class="text-center">LARAVEL VERSION</th>
+                <th class="text-center">MYSQL VERSION</th>
+            </tr>
+            <tr>
+                <td class="text-center text-xl">@if(!empty($versions['php'])){{ $versions['php'] }}@endif</td>
+                <td class="text-center text-xl">@if(!empty($versions['laravel'])){{ $versions['laravel'] }}@endif</td>
+                <td class="text-center text-xl">@if(!empty($versions['mysql'])){{ $versions['mysql'] }}@else <span style="color: red;">DB not connected!</span> @endif</td>
+            </tr>
+        </thead>
+    </table>
     <div class="text-center mt-3">
         <h3 class="onex-tag-title">Laravel Informations</h3>
     </div>
