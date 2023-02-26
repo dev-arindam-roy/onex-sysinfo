@@ -1,0 +1,29 @@
+{
+    "name": "onexcrm/sysinfo",
+    "description": "A complete system environment detail information guide for laravel projects",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Arindam Roy",
+            "email": "arindam.roy.developer@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Onex\\Sysinfo\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Onex\\Sysinfo\\OnexSysinfoServiceProvider"
+            ],
+            "aliases": {
+                "OnexSysInfo": "Onex\\Sysinfo\\Sysinfo\\SysinfoClassFacade"
+            }
+        }
+    }
+}
