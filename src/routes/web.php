@@ -1,8 +1,11 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
+
 $onexsysRouteEnabled = true;
 $onexsysRoutePrefix = 'onex';
 $onexsysRouteName = 'check-sysinfo';
+$onexsysMiddleware = ['web'];
 
 $publishedConfigFilePath = config_path('onex-sysinfo.php');
 if (file_exists($publishedConfigFilePath)) {
@@ -12,7 +15,7 @@ if (file_exists($publishedConfigFilePath)) {
 }
 
 if ($onexsysRouteEnabled) {
-    Route::group(['namespace' => 'Onex\Sysinfo\Http\Controllers', 'prefix' => $onexsysRoutePrefix, 'middleware' => ['web']], function() use($onexsysRouteName) {
+    Route::group(['namespace' => 'Onex\Sysinfo\Http\Controllers', 'prefix' => $onexsysRoutePrefix, 'middleware' => $onexsysMiddleware], function() use($onexsysRouteName) {
         Route::get($onexsysRouteName, 'OnexSysinfoController@index');
         Route::post('onexsysinfo-adminaccess', 'OnexSysinfoController@onexsysinfoAdminaccess')->name('onexsysinfoAdminaccess');
         Route::get('onexsysinfo-adminaccess/logout', 'OnexSysinfoController@onexsysinfoAdminLogout')->name('onexsysinfoAdminLogout');

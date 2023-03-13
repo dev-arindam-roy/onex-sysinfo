@@ -174,7 +174,6 @@ class OnexSysinfoController extends Controller
             return '';
             //return $e->getMessage();
         }
-        
     }
 
     public function onexsysinfoAdminLogout(Request $request)

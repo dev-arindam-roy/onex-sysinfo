@@ -29,7 +29,15 @@ return [
 
 
     /**
-     * If you want to use a authentication process access the system information view page
+     * If you want to add any middleware (s) to restrict the access
+     * 
+     * default: web
+     */
+    'route_middleware' => ['web'],
+
+
+    /**
+     * If you want to use a authentication process to access the system information view page
      */
     'authentication' => [
         'is_enabled' => env('ONEX_SYSINFO_AUTH_ENABLED', false),
