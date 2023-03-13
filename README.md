@@ -45,6 +45,14 @@ Ex: http://your-website/onex/check-sysinfo
 
 Ex: http://localhost:8000/onex/check-sysinfo
 ```
+![sys_info-1](https://user-images.githubusercontent.com/24665327/224806839-245e87e7-fdbf-4c27-bf36-d27b465f6f80.png)
+
+![sys-info-2](https://user-images.githubusercontent.com/24665327/224806938-79c21838-e6bd-47aa-9f29-2fccafe258ab.png)
+
+![sysinfo-3](https://user-images.githubusercontent.com/24665327/224807043-d74eeaf3-08f2-4f7b-a6c5-93cc91e38489.png)
+
+![sysinfo-5](https://user-images.githubusercontent.com/24665327/224807193-3aad7620-402a-4eed-9021-1a5fd53f9972.png)
+
 
 > **USE LIKE A HELPER IN CONTROLLER**
 ---
